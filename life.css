@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.timeline
+{
+    padding: 10px 0;
+}
+
+.moment {
+    border: 1px solid;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 600px;
+
+    position: relative;
+
+    border-radius: 2px;;
+    cursor: pointer;
+}
+
+.moment + .moment {
+    margin-top: 50px;
+}
+
+.moment + .moment::before {
+    content: "";
+    display: block;
+    background-color: black;
+    width: 2px;
+    height: 50px;
+    position: absolute;
+    top: calc(-100% + 8px);
+    left: calc(50% - 5px);
+}
